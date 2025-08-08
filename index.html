@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>മ Herbals - Natural Hair Growth Oil | Herbal Hair Care Solutions</title>
+    <meta name="description" content="മ Herbals premium herbal oil for effective hair growth, dandruff control, and hair fall prevention. 100% natural ingredients. Order via WhatsApp.">
+    
+    <!-- Fonts -->
+    <link rel="stylesheet" href="static/fonts/fonts.css">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="static/icons/fontawesome.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-content">
+                <div class="logo">
+                    <img src="static/images/image_1754628038451.png" alt="മ Herbals Logo" class="logo-img">
+                    <div class="logo-text">Herbals</div>
+                </div>
+                
+                <div class="nav-links">
+                    <button onclick="scrollToSection('benefits')" class="nav-link">Benefits</button>
+                    <button onclick="scrollToSection('ingredients')" class="nav-link">Ingredients</button>
+                    <button onclick="scrollToSection('usage')" class="nav-link">How to Use</button>
+                    <button onclick="scrollToSection('testimonials')" class="nav-link">Reviews</button>
+                    <button onclick="orderWhatsApp()" class="btn-order">
+                        <i class="fab fa-whatsapp"></i> Order Now
+                    </button>
+                </div>
+                
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars" id="menu-icon"></i>
+                </button>
+            </div>
+            
+            <div class="mobile-menu" id="mobile-menu">
+                <button onclick="scrollToSection('benefits'); closeMobileMenu()" class="mobile-link">Benefits</button>
+                <button onclick="scrollToSection('ingredients'); closeMobileMenu()" class="mobile-link">Ingredients</button>
+                <button onclick="scrollToSection('usage'); closeMobileMenu()" class="mobile-link">How to Use</button>
+                <button onclick="scrollToSection('testimonials'); closeMobileMenu()" class="mobile-link">Reviews</button>
+                <button onclick="orderWhatsApp(); closeMobileMenu()" class="btn-order mobile">
+                    <i class="fab fa-whatsapp"></i> Order Now
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-logo">
+                        <img src="static/images/image_1754628038451.png" alt="മ Herbals Logo" class="hero-logo-img">
+                        <h1 class="hero-title">Herbals</h1>
+                    </div>
+                    <h2 class="hero-subtitle">Premium Herbal Hair Oil</h2>
+                    <p class="hero-description">
+                        Experience the power of 100% natural herbal ingredients for effective hair growth, 
+                        dandruff control, and hair fall prevention. Trusted by thousands for healthier, stronger hair.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <button onclick="orderWhatsApp()" class="btn-primary">
+                            <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                        </button>
+                        <button onclick="scrollToSection('benefits')" class="btn-secondary">
+                            Learn More
+                        </button>
+                    </div>
+                    
+                    <div class="trust-badges">
+                        <div class="badge">
+                            <div class="badge-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <div class="badge-text">
+                                <div class="badge-title">100% Natural</div>
+                                <div class="badge-subtitle">No Chemicals</div>
+                            </div>
+                        </div>
+                        <div class="badge">
+                            <div class="badge-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="badge-text">
+                                <div class="badge-title">Certified</div>
+                                <div class="badge-subtitle">Quality Assured</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="product-card">
+                        <img src="static/images/image_1754627719811.png" alt="മ Herbals Hair Oil" class="product-img">
+                    </div>
+                    <div class="floating-badge herbal">100% Herbal</div>
+                    <div class="floating-badge delivery">Fast Delivery</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose <span class="text-gradient">മ Herbals</span>?</h2>
+                <p class="section-description">
+                    Discover the natural solution to all your hair problems with our scientifically formulated herbal oil
+                </p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3 class="benefit-title">Hair Growth</h3>
+                    <p class="benefit-description">Stimulates hair follicles and promotes natural hair growth with powerful herbal extracts</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="benefit-title">Dandruff Control</h3>
+                    <p class="benefit-description">Eliminates dandruff and prevents its recurrence with anti-fungal herbal properties</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="benefit-title">Hair Fall Prevention</h3>
+                    <p class="benefit-description">Strengthens hair roots and reduces hair fall significantly with nourishing ingredients</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-sparkles"></i>
+                    </div>
+                    <h3 class="benefit-title">Scalp Nourishment</h3>
+                    <p class="benefit-description">Deep nourishes scalp with essential vitamins and minerals for healthy hair growth</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 class="benefit-title">Hair Shine</h3>
+                    <p class="benefit-description">Adds natural shine and softness to hair, making it smooth and manageable</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="benefit-title">Quick Results</h3>
+                    <p class="benefit-description">See visible results within 2-3 weeks of regular use with our potent formula</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ingredients Section -->
+    <section id="ingredients" class="ingredients">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Natural <span class="text-gradient">Ingredients</span></h2>
+                <p class="section-description">
+                    Our carefully selected herbal ingredients work synergistically to give you the best results
+                </p>
+            </div>
+            
+            <div class="ingredients-grid">
+                <div class="ingredient-card">
+                    <div class="ingredient-icon coconut">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3 class="ingredient-name">Coconut Oil</h3>
+                    <p class="ingredient-description">Deep moisturizes and strengthens hair from root to tip</p>
+                </div>
+                
+                <div class="ingredient-card">
+                    <div class="ingredient-icon aloe">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="ingredient-name">Aloe Vera</h3>
+                    <p class="ingredient-description">Soothes scalp and provides natural conditioning</p>
+                </div>
+                
+                <div class="ingredient-card">
+                    <div class="ingredient-icon bhringraj">
+                        <i class="fas fa-flower"></i>
+                    </div>
+                    <h3 class="ingredient-name">Bhringraj</h3>
+                    <p class="ingredient-description">Traditional herb known for promoting hair growth</p>
+                </div>
+                
+                <div class="ingredient-card">
+                    <div class="ingredient-icon amla">
+                        <i class="fas fa-apple-alt"></i>
+                    </div>
+                    <h3 class="ingredient-name">Amla</h3>
+                    <p class="ingredient-description">Rich in Vitamin C, prevents premature graying</p>
+                </div>
+                
+                <div class="ingredient-card">
+                    <div class="ingredient-icon fenugreek">
+                        <i class="fas fa-wheat"></i>
+                    </div>
+                    <h3 class="ingredient-name">Fenugreek</h3>
+                    <p class="ingredient-description">Controls dandruff and adds natural shine</p>
+                </div>
+                
+                <div class="ingredient-card">
+                    <div class="ingredient-icon neem">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <h3 class="ingredient-name">Neem</h3>
+                    <p class="ingredient-description">Natural antifungal properties for scalp health</p>
+                </div>
+                
+                <div class="ingredient-card">
+                    <div class="ingredient-icon curry">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="ingredient-name">Curry Leaves</h3>
+                    <p class="ingredient-description">Prevents hair fall and promotes thickness</p>
+                </div>
+                
+                <div class="ingredient-card">
+                    <div class="ingredient-icon hibiscus">
+                        <i class="fas fa-flower"></i>
+                    </div>
+                    <h3 class="ingredient-name">Hibiscus</h3>
+                    <p class="ingredient-description">Natural conditioner for smooth, silky hair</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Usage Section -->
+    <section id="usage" class="usage">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How to <span class="text-gradient">Use</span></h2>
+                <p class="section-description">
+                    Follow these simple steps for maximum effectiveness and best results
+                </p>
+            </div>
+            
+            <div class="usage-content">
+                <div class="usage-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Preparation</h3>
+                            <p class="step-description">Take 2-3 teaspoons of മ Herbals oil in a bowl. Slightly warm the oil for better absorption.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Application</h3>
+                            <p class="step-description">Apply the oil to your scalp using fingertips. Gently massage in circular motions for 5-10 minutes.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Distribution</h3>
+                            <p class="step-description">Spread the oil through the length of your hair from roots to tips for complete nourishment.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Wait & Wash</h3>
+                            <p class="step-description">Leave the oil for at least 30 minutes or overnight. Wash with mild shampoo and rinse thoroughly.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="usage-info">
+                    <div class="usage-visual">
+                        <div class="usage-icon">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <h3 class="usage-title">Best Results</h3>
+                        <p class="usage-description">Use 2-3 times per week for optimal hair growth and health</p>
+                        
+                        <div class="frequency-card">
+                            <h4 class="frequency-title">Recommended Frequency</h4>
+                            <div class="frequency-item">
+                                <span>For Hair Growth:</span>
+                                <span class="frequency-value">3x per week</span>
+                            </div>
+                            <div class="frequency-item">
+                                <span>For Maintenance:</span>
+                                <span class="frequency-value">2x per week</span>
+                            </div>
+                            <div class="frequency-item">
+                                <span>For Dandruff:</span>
+                                <span class="frequency-value">Daily (first week)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tips-section">
+                <h3 class="tips-title">Pro Tips for Best Results</h3>
+                <div class="tips-grid">
+                    <div class="tip">
+                        <div class="tip-icon">
+                            <i class="fas fa-thermometer-half"></i>
+                        </div>
+                        <h4 class="tip-title">Warm Oil</h4>
+                        <p class="tip-description">Slightly warm oil penetrates better and provides better nourishment</p>
+                    </div>
+                    
+                    <div class="tip">
+                        <div class="tip-icon">
+                            <i class="fas fa-moon"></i>
+                        </div>
+                        <h4 class="tip-title">Overnight Treatment</h4>
+                        <p class="tip-description">For intensive care, leave overnight for maximum absorption</p>
+                    </div>
+                    
+                    <div class="tip">
+                        <div class="tip-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4 class="tip-title">Be Consistent</h4>
+                        <p class="tip-description">Regular use for 4-6 weeks shows significant improvement</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our <span class="text-gradient">Customers Say</span></h2>
+                <p class="section-description">
+                    Real results from real people who trusted മ Herbals for their hair care needs
+                </p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="avatar pink">P</div>
+                        <div class="testimonial-info">
+                            <h4 class="customer-name">Priya Sharma</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "I've been using മ Herbals for 2 months and the results are amazing! My hair fall has reduced significantly and I can see new hair growth. Highly recommended!"
+                    </p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="avatar blue">R</div>
+                        <div class="testimonial-info">
+                            <h4 class="customer-name">Rahul Nair</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "My dandruff problem is completely gone after using this oil. The natural ingredients work wonderfully without any side effects. Worth every penny!"
+                    </p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="avatar green">S</div>
+                        <div class="testimonial-info">
+                            <h4 class="customer-name">Sneha Krishnan</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "The best herbal oil I've ever used! My hair is now shinier, stronger, and much more manageable. The ordering through WhatsApp was also very convenient."
+                    </p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="avatar purple">A</div>
+                        <div class="testimonial-info">
+                            <h4 class="customer-name">Anjali Menon</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "I was skeptical at first, but മ Herbals really works! My scalp feels healthier and my hair has a natural bounce. The natural fragrance is also lovely."
+                    </p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="avatar orange">V</div>
+                        <div class="testimonial-info">
+                            <h4 class="customer-name">Vikram Raj</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "Fast delivery and excellent quality! Using it for 3 weeks and already seeing improvement in my hair thickness. Will definitely order again."
+                    </p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="avatar red">M</div>
+                        <div class="testimonial-info">
+                            <h4 class="customer-name">Maya Pillai</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "This oil has transformed my hair completely! From dry and lifeless to healthy and vibrant. Thank you മ Herbals for this wonderful product!"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section class="order">
+        <div class="container">
+            <div class="order-content">
+                <h2 class="order-title">Ready to Transform Your Hair?</h2>
+                <p class="order-description">
+                    Join thousands of satisfied customers and experience the power of natural herbal care
+                </p>
+                
+                <div class="product-info">
+                    <div class="product-detail">
+                        <div class="product-value">100ml</div>
+                        <div class="product-label">Premium Quality</div>
+                    </div>
+                    <div class="product-detail">
+                        <div class="product-value">₹399</div>
+                        <div class="product-label">Special Price</div>
+                    </div>
+                    <div class="product-detail">
+                        <div class="product-value">24hr</div>
+                        <div class="product-label">Fast Delivery</div>
+                    </div>
+                </div>
+                
+                <div class="order-button-section">
+                    <button onclick="orderWhatsApp()" class="btn-order-main">
+                        <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                    </button>
+                    <p class="order-note">
+                        Click to place your order through WhatsApp • Fast & Secure
+                    </p>
+                </div>
+                
+                <div class="contact-info">
+                    <h3 class="contact-title">Contact Information</h3>
+                    <div class="contact-grid">
+                        <div class="contact-item">
+                            <i class="fab fa-whatsapp contact-icon"></i>
+                            <div class="contact-details">
+                                <div class="contact-value">+91 8075297847</div>
+                                <div class="contact-label">WhatsApp Orders</div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <div class="contact-details">
+                                <div class="contact-value">info@maherbals.com</div>
+                                <div class="contact-label">Email Support</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="static/images/image_1754628038451.png" alt="മ Herbals Logo" class="footer-logo-img">
+                        <div class="footer-logo-text">Herbals</div>
+                    </div>
+                    <p class="footer-description">
+                        Natural herbal solutions for healthy, beautiful hair. Trusted by thousands for effective hair care.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-menu">
+                        <li><button onclick="scrollToSection('benefits')" class="footer-link">Benefits</button></li>
+                        <li><button onclick="scrollToSection('ingredients')" class="footer-link">Ingredients</button></li>
+                        <li><button onclick="scrollToSection('usage')" class="footer-link">How to Use</button></li>
+                        <li><button onclick="scrollToSection('testimonials')" class="footer-link">Reviews</button></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4 class="footer-heading">Customer Care</h4>
+                    <ul class="footer-info">
+                        <li>WhatsApp: +91 8075297847</li>
+                        <li>Email: info@maherbals.com</li>
+                        <li>Delivery: 24-48 hours</li>
+                        <li>100% Natural Products</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h4 class="footer-heading">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 മ Herbals. All rights reserved. | Made with natural ingredients and care. | Developed by <a href="https://www.instagram.com/anandhuu.x" target="_blank">BridgeXHub</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <button class="whatsapp-float" onclick="orderWhatsApp()" title="Order via WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </button>
+
+    <!-- Custom JavaScript -->
+    <script src="static/js/script.js"></script>
+</body>
+</html>
